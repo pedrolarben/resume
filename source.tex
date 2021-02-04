@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Wilmer Gonzalez
-% Based on: Sourabh Bajaj repo
+% Author : Pedro Lara
+% Based on: Wilmer Gonzalez repo
 % License : MIT
 %------------------------
 
@@ -18,6 +18,8 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[document]{ragged2e}
 
 % Page coloring, fonts, and logos
 \usepackage{pagecolor}
@@ -85,137 +87,79 @@
 
 % COLOR THEMES SELECTION
 
-% For Light theme un-comment this and comment the Dark theme section below
-\colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Get dark theme}}
-\newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Get latest version \faicon{refresh}}}
+%For Light theme un-comment this and comment the Dark theme section below
+%\colorlet{urlcolor}{blue}
+%\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_dark.pdf}{Get dark theme}}
+%\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_light.pdf}{Get latest version \faicon{refresh}}}
+%\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-light.png}~}
 
-\begin{document}
+%\begin{document}
 % ---
 
 % For Dark theme un-comment this and comment the Light theme section above
-% \colorlet{textcolor}{white!80!gray}
-% \colorlet{backgroundcolor}{black!30!gray}
-% \colorlet{urlcolor}{blue!25!white}
-% \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Get light theme}}
-% \newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Get latest version \faicon{refresh}}}
-
-% \begin{document}
-% \pagecolor{backgroundcolor}
+\colorlet{textcolor}{white!80!gray}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_light.pdf}{Get light theme}}
+\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_dark.pdf}{Get latest version 
+\faicon{refresh}}}
+\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-dark.png}~}
+%
+ \begin{document}
+ \pagecolor{backgroundcolor}
 % ---
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://linktr.ee/wilmerags}{\Large Wilmer A. Gonzalez S.}} &  \href{https://github.com/wilmeragsgh}{ \faicon{github} \color{urlcolor} wilmeragsgh} \\
-  \href{mailto:wilmeragsgm@gmail.com}{wilmeragsgm@gmail.com} &  \faicon{code} Python, R\\
+  \textbf{\href{https://www.pedrolarben.com}{\LARGE Pedro Lara-Benítez}} &  \\
+  {{\Large Machine Learning Researcher}} &  \href{https://github.com/pedrolarben}{ \faicon{github} \color{urlcolor} pedrolarben} \\
+  \href{mailto:pedrolarabenitez@gmail.com}{pedrolarabenitez@gmail.com} &  \href{https://www.linkedin.com/in/pedrolarben }{ \faicon{linkedin} \color{urlcolor} }  \href{https://scholar.google.com/citations?user=vrWKUgcAAAAJ&hl }{ \faicon{graduation-cap} \color{urlcolor} } 
+  \href{https://www.researchgate.net/profile/Pedro_Lara-Benitez }{ \researchgatesocialsymbol \color{urlcolor} } \\
+  \href{tel:+447895284760}{07895 284760} \hspace{0.5em} London, UK &  \faicon{code} Python, Java, C, R\\
   \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
 \end{tabular*}
 % ---
+\vspace{-2em}
+\section*{}
+\justifying
+Research-focused professional with strong programming and mathematical skills in algebra and statistics. Hands-on experience providing valuable insights via data analytics and advanced data-driven methods. Proven success developing high quality code with detailed documentation to support reproducible research. Passionate about core machine learning principles, data sciences, deep learning, engineering, and research. Track record of conducting cutting-edge research on distributed artificial intelligence to develop state-of-the-art solutions for real-world problems.
 
 % EXPERIENCE
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {UNDP (ONU)}{Caracas, VE}
-      {Data Science Consultant}{August 2019 - Present}
+      {University of Seville}{Spain}
+      {Machine Learning Researcher}{October 2018 - Present}
       \resumeItemListStart
       \resumeItem{
-      Designed and develop workflows for topic modeling and community detection to analyze hundred-thousand-scale text and network data.}
-      \resumeItem{Sped up the analytical workflow by 75\% by redesigning the sampling strategy for jobs.}
-      \resumeItem{Generated CLI tool for automation of predefined analysis workflows.}
+      Carry out experiments regarding deep learning, interpret results, and produce a written paper with conclusions of study.}
+      \resumeItem{Demonstrate expertise in the state-of-art techniques of the field..}
+      \resumeItem{Reviewed and published papers while acting as a PhD student.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, Bash, Gephi and Power BI.}\\
-      \resumeTech{Theory}{Topic modeling, Community detection, Network Analysis and NLP.}
+      \resumeTech{Technologies}{Python, Tensorflow, Keras, Pytorch, Sklearn, Matplotlib, AWS, Latex.}\\
+      \resumeTech{Theory}{Deep Learning, Time series forecasting, Online learning, Data stream, Computer vision and Object detection.}
 
-\resumeSubheading
-      {Universidad Central de Venezuela}{Caracas, VE}
-      {Advanced topics in AI(Adjunct Professor)}{October 2018 - Present}
-      \resumeItemListStart
-      \resumeItem{Designed and organized course material and resources for topics described in \href{https://bit.ly/2VYchte}{here}.}
-      \resumeItem{Lectured material for students and grade their assignments.}
-      \resumeItemListEnd
-\resumeSubSubheading
-      {Introduction to Data Science (Teaching assistant)}{April 2015 - February 2018}
-\resumeSubSubheading
-     {Data Mining (Teaching assistant)}{August 2015 - February 2018}
-     \resumeItemListStart
-      \resumeItem{Designed and organized \textbf{practical} course material and resources for topics described in \href{https://bit.ly/2VYchte}{here}.}
-      \resumeItem{Lectured \textbf{practical} material for students and grade their assignments.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Latex, R, Weka, Colab, Jupyter and swirl.}\\
-      \resumeTech{Theory}{Artificial intelligence, Data science and Data mining.}
+%\resumeSubheading
+%      {\textit{Additional Experience}}{Spain}
+%      {Freelance Software Developer}{2017 - 2019}
+%      \resumeItemListStart
+%      \resumeItem{Android App for MSIG Smart Management.}
+%      \resumeItem{Patients management web information system for BBA Medical Centre.}
+%      \resumeItemListEnd
 
-\resumeSubheading
-      {Oliver Wyman/Bairesdev}{(remote) Caracas, VE}
-      {Data engineer}{July 2020 - November 2020}
-      \resumeItemListStart
-      \resumeItem{Helped to create a container image for provisioning Airflow instance.}
-      \resumeItem{Created dynamic DAGs (Airflow) for (30+) stored procedures (SQL Server) by automatically parsing them from scripts.}
-      \resumeItem{Created dynamic DAGs for importing tabular data (1M+ records) to SQL Server.}
-      \resumeItem{Created dynamic DAGs for importing google analytics.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Airflow, SQL Server, Jenkins, Rancher, Docker, Kubernetes.}\\
-      \resumeTech{Theory}{Data pipelines orchestration, ETL, Provisioning.}
-
-\resumeSubheading
-      {Quash.ai}{(remote) Caracas, VE}
-      {Machine learning engineer}{February 2019 - March 2020}
-      \resumeItemListStart
-      \resumeItem{Developed a customer facing API for using our internal credit scoring model.}
-      \resumeItem{Improved credit scoring model performance of 5 business clients by 15\% by incorporating state-of-the-art ML models adapted for our feature sets and hyper-parameter optimization models.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, S3 and Docker.}\\
-      \resumeTech{Theory}{Credit scoring and Hyper-parameter optimization.}
-
-\resumeSubheading
-      {Advoqt}{(remote) Caracas, VE}
-      {Machine learning engineer}{February 2019 - August 2019}
-      \resumeItemListStart
-      \resumeItem{Implemented Deep learning model for classifying malicious urls using only urls' text features, achieving 90\% of baseline accuracy by adapting state-of-the-art models on urls classifications.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Elasticsearch and Spark.}\\
-      \resumeTech{Theory}{Deep learning and Text classification.}
-
-\resumeSubheading
-      {Fetcher}{Caracas, VE}
-      {Data Scientist}{June 2018 - February 2019}
-      \resumeItemListStart
-      \resumeItem{Estimated demand of required candidates for sourcing using daily output data.}
-      \resumeItem{Generated automated allocation algorithm for reducing overload of sourcing teams by 10\% by using linear programming and constraint satisfaction techniques.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{R, Shiny, Latex, SQL and Metabase.}\\
-      \resumeTech{Theory}{Linear programming and Constraint Satisfaction problems.}
-
-%\newpage
-
-\resumeSubheading
-      {Predictvia}{Caracas, VE}
-      {Artificial Intelligence}{July 2016 - January 2017}
-\resumeSubSubheading
-     {Artificial Intelligence intern}{February 2016 - July 2016}
-     \resumeItemListStart
-     \resumeItem{Performed social network analysis, exploratory data analysis, supervised and unsupervised learning.}
-     \resumeItem{Built and implemented classification models, perform feature engineering and calibrated existing models.}
-     \resumeItemListEnd
-     \resumeTech{Technologies}{Python.}\\
-     \resumeTech{Theory}{Social network analysis, Attribution models and  Recommendation systems.}
 \resumeSubHeadingListEnd
 % ---
 % PROGRAMMING SKILLS
 \section{Other programming tools}
   \resumeSubHeadingListStart
-  \resumeSubItem{\textbf{Cloud services:} AWS(Lambda, S3, Sagemaker), Azure(Blob storage).}
+  \resumeSubItem{\textbf{Cloud services:} AWS and Azure for training Deep Learning models.}
   
-  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow.}
+  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow, Pytorch.}
   
-  \resumeSubItem{\textbf{R:} dplyr, ggplot, tidyr, shiny, plumber...}
+  \resumeSubItem{\textbf{Python:} numpy, xgboost, sci-kit, pandas, river, matplotlib, flask...}
   
-  \resumeSubItem{\textbf{Python:} xgboost, sci-kit, pandas, falcon, flask...}
-  
-  \resumeSubItem{\textbf{DevOps:} Jenkins, Terraform.}
-  
-  \resumeSubItem{\textbf{*Learning:} Vue, Nodejs.}
+  \resumeSubItem{\textbf{Other technologies:} Git, docker, databases, linux, OOP<<<<<<<<.}
   
   \resumeSubHeadingListEnd
 
@@ -223,11 +167,30 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Universidad Central de Venezuela}{Caracas, Venezuela}
-      {B.Sc in Computer Science}{Sept. 2012 -- Jun. 2018}
+      {University of Seville}{Seville, Spain}
+      {PhD in Computer Science - Machine Learning }{Sept. 2019 -- Present}
       \resumeItemListStart
-      \resumeItem{Took elective courses on: Introduction to data science, Advanced topics in data science, Artificial Intelligence, Data mining, Text mining, NoSQL databases, Digital image processing.}
-      \resumeItem{(Thesis title) AdaBnn: Binarized Neural Networks trained with adaptive structural learning.}
+      \resumeItem{Researching about data science, machine learning and artificial intelligence. Mainly focused on deep learning, time series analysis, data stream mining and object detection.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Seville}{Seville, Spain}
+      {M.Sc in Software Engineering: Cloud, Data Science \& IT Service Management - 9.3/10}{Sept. 2018 -- Jun. 2019}
+      \resumeItemListStart
+      \resumeItem{Took selective courses on: Data Engineering, Machine Learning, Data visualisation techniques, Analysis of unstructured information, Big Data, Data Science.}
+      \resumeItem{(Thesis title) Asynchronous framework for the application of Deep Learning to streaming data.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Middlesex University}{London, UK}
+      {[Erasmus year abroad] B.Sc in Computer Science}{Sept. 2017 -- Jun. 2018}
+      \resumeItemListStart
+      \resumeItem{Took selective courses on: Open Source Software, Quantum Information Theory and Artificial Intelligence.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Seville}{Seville, Spain}
+      {B.Sc in Computer Science - Software Engineering - 8.5/10}{Sept. 2014 -- Jun. 2018}
+      \resumeItemListStart
+      \resumeItem{Took courses such as: Statistics, Analysis and Design of Data structures and Algorithms, Signal processing or Artificial Intelligence.}
+      \resumeItem{(Thesis title) Biomedical data analysis with deep learning.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 % ---
@@ -235,75 +198,75 @@
 \hfill \textsl{ \faicon{link}Following sections items are clickable for references.}
 
 % CERTIFICATIONS
-\section{Certifications}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Coursera}{MOOC}
-      {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/WYGXVXA327K9}{Deep learning Specialization}}{Issued January 2021}
-    
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/HEURLGHTW46G}{Sequence Models}}{Issued January 2021}
-      
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/U59ZPPWP5NRN}{Convolutional Neural Networks}}{Issued September 2020}
-    
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/BHN34W5WKBUT}{Structuring Machine Learning Projects}}{Issued May 2020} 
-   
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/records/J76SQGG4PVYL}{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}{Issued May 2020}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/MBWJ69CVLQAZ}{Neural Networks and Deep Learning}}{Issued May 2020}
-      
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/MZ7TC7ADV7YY}{R Programming}}{Issued September 2016}
-      
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/36JC577GBFYD}{Text Mining and Analytics}}{Issued August 2016}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/MDWATFKLPH9Z}{Text retrieval and search engines}}{Issued June 2016}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/TM7T8CJXNV6R}{The Data Scientist's Toolbox}}{Issued June 2016}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/WYGG7TDFPB3F}{Data Visualization}}{Issued March 2016}
-  \resumeSubHeadingListEnd
+%\section{Certifications}
+%  \resumeSubHeadingListStart
+%    \resumeSubheading
+%      {Coursera}{MOOC}
+%      {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/WYGXVXA327K9}{Deep learning Specialization}}{Issued January 2021}
+%    
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/verify/HEURLGHTW46G}{Sequence Models}}{Issued January 2021}
+%      
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/verify/U59ZPPWP5NRN}{Convolutional Neural Networks}}{Issued September 2020}
+%    
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/verify/BHN34W5WKBUT}{Structuring Machine Learning Projects}}{Issued May 2020} 
+%   
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/records/J76SQGG4PVYL}{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and %Optimization}}{Issued May 2020}
+%     
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/verify/MBWJ69CVLQAZ}{Neural Networks and Deep Learning}}{Issued May 2020}
+%      
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/certificate/MZ7TC7ADV7YY}{R Programming}}{Issued September 2016}
+%      
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/certificate/36JC577GBFYD}{Text Mining and Analytics}}{Issued August 2016}
+%     
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/certificate/MDWATFKLPH9Z}{Text retrieval and search engines}}{Issued June 2016}
+%     
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/certificate/TM7T8CJXNV6R}{The Data Scientist's Toolbox}}{Issued June 2016}
+%     
+%    \resumeSubSubheading
+%     {\href{https://www.coursera.org/account/accomplishments/certificate/WYGG7TDFPB3F}{Data Visualization}}{Issued March 2016}
+%  \resumeSubHeadingListEnd
 % ---
 
-\newpage
+%\newpage
+
+
+
+% RESEARCH PUBLICATIONS
+\section{Research publications}
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://www.researchgate.net/publication/347133536_An_Experimental_Review_on_Deep_Learning_Architectures_for_Time_Series_Forecasting}{Pedro Lara-Benítez, Manuel Carranza-García, and José C. Riquelme. "\textbf{An Experimental Review on Deep Learning Architectures for Time Series Forecasting.}" International Journal of Neural Systems, DOI:10.1142/S0129065721300011, Feb 2021.}}
+    
+    \resumeSubItem{{Manuel Carranza-García,  Pedro Lara-Benítez, Jorge García-Gutiérrez, and José C. Riquelme. "\textbf{Enhancing Object Detection in Autonomous Vehicles by Optimizing Anchor Generation and Addressing Class Imbalance.}" Currently under the second round of peer review in Neurocomputing.}}
+    
+    \resumeSubItem{\href{https://doi.org/10.3390/rs13010089}{Manuel Carranza-García, Jesús Torres-Mateo, Pedro Lara-Benítez, and JorgeGarcía-Gutiérrez. "\textbf{On the performance of one-stage and two-stage object detectors in autonomous vehicles using camera data.}" Remote Sensing, vol. 13, no 1, p. 89, DOI:10.3390/rs13010089, Nov 2020.}}
+    
+    \resumeSubItem{\href{https://doi.org/10.1007/978-3-030-57802-2_14}{Pedro Lara-Benítez, Manuel Carranza-García, Francisco Martínez-Álvarez, and José C. Riquelme. "\textbf{On the performance of deep learning models for time series classification in streaming.}" 15th International Conference on Soft Computing Models in Industrial and Environmental Applications (SOCO 2020), vol. 1268, pp 144-154, Springer International Publishing, DOI:10.1007/978-3-030-57802-2\_14, Aug 2020.}}
+    
+    \resumeSubItem{\href{https://doi.org/10.3390/app10072322}{Pedro Lara-Benítez, Manuel Carranza-García, José M. Luna-Romera, José C. Riquelme. "\textbf{Temporal Convolutional Networks Applied to Energy-Related Time Series Forecasting." Applied Sciences.} , vol. 10, pp 2322, DOI:10.3390/app10072322, March 2020.}}
+    
+    \resumeSubItem{\href{https://www.researchgate.net/publication/338590631_Asynchronous_dual-pipeline_deep_learning_framework_for_online_data_stream_classification}{Pedro Lara-Benítez, Manuel Carranza-García, Jorge García-Gutiérrez, and José C. Riquelme. "\textbf{Asynchronous dual-pipeline deep learning framework for online data stream classification.}" Integrated Computer-Aided Engineering, vol. 27, no. 2, pp. 101-119, DOI:10.3233/ICA-200617, Feb 2020.}}
+
+    
+  \resumeSubHeadingListEnd
+% ---
 
 % PROJECTS
 \section{Personal Projects}
 
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/adabnn}{AdaBnn: Binarized Neural Networks trained with adaptive structural learning.}}
+    \resumeSubItem{\href{https://adlstream.readthedocs.io/}{ADLStream: A python open source library for online learning with Deep Learning models.}}
 
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/WarmChat}{WarmChat: This app is a small chat room that classify every message and say weather is an insult or not using four classifiers: svm, random forest, decision trees and max entropy.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/term_freq_linkedin}{Small tool for generating frequent words analysis on the position names of LinkedIn Connections.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/shinycker}{Template for Dockerized Shiny (R) application deployment.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/resume}{Latex template for CVs with dark theme, with CV guidelines from google.}}
-    
-  \resumeSubHeadingListEnd
-% ---
-
-% PERSONAL PUBLICATIONS
-\section{Personal publications}
-
-  \resumeSubHeadingListStart
-    \resumeSubItem{\href{http://scivisionpub.com/pdfs/diodes-laser-in-office-endoscopic-surgery-center-for-nasal-obstruction-and-snoring-558.pdf}{Sajidxa Mariño, Jesus Lares, Wilmer Gonzalez. Diode’s Laser in Office Endoscopic Surgery Center for Nasal Obstruction
-and Snoring. J Med - Clin Res \& Rev. 2018; 2(6): 1-3.}}
-
-    \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/twitter-a-data-source-for-the-academy}{Twitter, A data source for the academy (spanish).}}
-    
-    \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/github-social-coding-the-social-network-for-programmers}{GitHub \& Social Coding. Social network for programmers (spanish).}}
-    
-    \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/reproducible-research-a-case-of-study-on-allocation-of-university-places}{Reproducible Research. Case of study: allocation of university places in UCV by OPSU (spanish).}}
+    \resumeSubItem{\href{https://github.com/tensorflow/addons/pull/1811/files}{Contribution to TensorFlow Addons with Echo State Network (ESN) implementation.}}
     
   \resumeSubHeadingListEnd
 % ---
