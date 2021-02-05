@@ -20,6 +20,7 @@
 \usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage[document]{ragged2e}
+\usepackage[super]{nth}
 
 % Page coloring, fonts, and logos
 \usepackage{pagecolor}
@@ -62,7 +63,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{8pt}\item%-1
+  \vspace{0pt}\item%-1
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -99,26 +100,26 @@
 % COLOR THEMES SELECTION
 
 %For Light theme un-comment this and comment the Dark theme section below
-%\colorlet{urlcolor}{blue}
-%\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_dark.pdf}{Get dark theme}}
-%\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_light.pdf}{Get latest version \faicon{refresh}}}
-%\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-light.png}~}
-%
-%\begin{document}
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv_dark.pdf}{Get dark theme}}
+\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv.pdf}{Get latest version \faicon{refresh}}}
+\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-light.png}~}
+
+\begin{document}
 % ---
 
 % For Dark theme un-comment this and comment the Light theme section above
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_light.pdf}{Get light theme}}
-\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_dark.pdf}{Get latest version 
-\faicon{refresh}}}
-\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-dark.png}~}
-
- \begin{document}
- \pagecolor{backgroundcolor}
+%\colorlet{textcolor}{white!80!gray}
+%\colorlet{backgroundcolor}{black!30!gray}
+%\colorlet{urlcolor}{blue!25!white}
+%\AtBeginDocument{\color{textcolor}}
+%\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv.pdf}{Get light theme}}
+%\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv_dark.pdf}{Get latest version 
+%\faicon{refresh}}}
+%\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-dark.png}~}
+%
+% \begin{document}
+% \pagecolor{backgroundcolor}
 % ---
 
 % HEADING
@@ -148,29 +149,28 @@ Research-focused professional with strong programming and mathematical skills in
       \resumeItem{Demonstrate expertise in the state-of-art techniques of the field..}
       \resumeItem{Reviewed and published papers while acting as a PhD student.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Tensorflow, Keras, Pytorch, Sklearn, Matplotlib, AWS, Latex.}\\
-      \resumeTech{Theory}{Deep Learning, Time series forecasting, Online learning, Data stream, Computer vision and Object detection.}
+      \resumeTech{Technologies}{python, tensorflow, keras, pytorch, numpy, sci-kit, matplotlib, latex, AWS.}\\
+      \resumeTech{Theory}{Deep Learning, Time series forecasting, Online learning, Data stream, and Computer vision.}
 
 \resumeSubheading
       {\textit{Additional Experience}}{Spain}
       {Freelance Software Developer}{2017 - 2019}
       \resumeItemListStart
-      \resumeItem{Android App for MSIG Smart Management.}
-      \resumeItem{Patients management web information system for BBA Medical Centre.}
+      \resumeItem{Android App for MSIG Smart Management and web information system for BBA Medical Centre.}
       \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 % ---
 % PROGRAMMING SKILLS
-\section{Other programming tools}
+\section{Technical Proficiencies}
   \resumeSubHeadingListStart
-  \resumeSubItem{\textbf{Cloud services:} AWS and Azure for training Deep Learning models.}
   
-  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow, Pytorch.}
+  \resumeSubItem{\textbf{Python:} keras, tensorflow, pytorch, numpy, xgboost, sci-kit, pandas, river, matplotlib, flask ...}
   
-  \resumeSubItem{\textbf{Python:} numpy, xgboost, sci-kit, pandas, river, matplotlib, flask...}
+  \resumeSubItem{\textbf{Other technologies:} AWS, azure, git, docker, databases, linux ...}
   
-  \resumeSubItem{\textbf{Other technologies:} Git, docker, databases, linux, OOP...}
+  \resumeSubItem{\textbf{Machine Learning:} Deep Learning, CNN, RNN, Transformers, Regression, data engineering ...}
+  
   
   \resumeSubHeadingListEnd
 
@@ -181,7 +181,7 @@ Research-focused professional with strong programming and mathematical skills in
       {University of Seville}{Seville, Spain}
       {PhD in Computer Science - Machine Learning }{Sept. 2019 -- Present}
       \resumeItemListStart
-      \resumeItem{Researching about data science, machine learning and artificial intelligence. Mainly focused on deep learning, time series analysis, data stream mining and object detection.}
+      \resumeItem{Researching about data science, machine learning and artificial intelligence. Mainly focused on deep learning, time series analysis, online learning and object detection.}
       \resumeItemListEnd
     \resumeSubheading
       {University of Seville}{Seville, Spain}
@@ -200,13 +200,14 @@ Research-focused professional with strong programming and mathematical skills in
       {University of Seville}{Seville, Spain}
       {B.Sc in Computer Science - Software Engineering - 8.5/10}{Sept. 2014 -- Jun. 2018}
       \resumeItemListStart
-      \resumeItem{Took courses such as: Statistics, Analysis and Design of Data structures and Algorithms, Signal processing or Artificial Intelligence.}
+      \resumeItem{Took courses such as: Statistics, Analysis and Design of Data structures and Algorithms, or Artificial Intelligence.}
       \resumeItem{(Thesis title) Biomedical data analysis with deep learning.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 % ---
 
 \hfill \textsl{ \faicon{link}Following sections items are clickable for references.}
+\vspace{-1.5em}
 
 % CERTIFICATIONS
 %\section{Certifications}
@@ -255,17 +256,17 @@ Research-focused professional with strong programming and mathematical skills in
 \section{Research publications}
 
   \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://www.researchgate.net/publication/347133536_An_Experimental_Review_on_Deep_Learning_Architectures_for_Time_Series_Forecasting}{Pedro Lara-Benítez, Manuel Carranza-García, and José C. Riquelme. "\textbf{An Experimental Review on Deep Learning Architectures for Time Series Forecasting.}" International Journal of Neural Systems, DOI:10.1142/S0129065721300011, Feb 2021.}}
+    \resumeSubItem{\href{https://www.researchgate.net/publication/347133536_An_Experimental_Review_on_Deep_Learning_Architectures_for_Time_Series_Forecasting}{Lara-Benítez, P., Carranza-García, M., and Riquelme, J. C. "\textbf{An Experimental Review on Deep Learning Architectures for Time Series Forecasting.}" International Journal of Neural Systems, DOI:10.1142/S0129065721300011, Feb 2021.}}
     
-    \resumeSubItem{{Manuel Carranza-García,  Pedro Lara-Benítez, Jorge García-Gutiérrez, and José C. Riquelme. "\textbf{Enhancing Object Detection in Autonomous Vehicles by Optimizing Anchor Generation and Addressing Class Imbalance.}" Currently under the second round of peer review in Neurocomputing.}}
+    \resumeSubItem{{Carranza-García, M.,  Lara-Benítez, P., García-Gutiérrez, J., and Riquelme, J. C. "\textbf{Enhancing Object Detection in Autonomous Vehicles by Optimizing Anchor Generation and Addressing Class Imbalance.}" Currently under review in Neurocomputing.}}
     
-    \resumeSubItem{\href{https://doi.org/10.3390/rs13010089}{Manuel Carranza-García, Jesús Torres-Mateo, Pedro Lara-Benítez, and JorgeGarcía-Gutiérrez. "\textbf{On the performance of one-stage and two-stage object detectors in autonomous vehicles using camera data.}" Remote Sensing, vol. 13, no 1, p. 89, DOI:10.3390/rs13010089, Nov 2020.}}
+    \resumeSubItem{\href{https://doi.org/10.3390/rs13010089}{Carranza-García, M., Torres-Mateo, J., Lara-Benítez, P., and García-Gutiérrez, J. "\textbf{On the performance of one-stage and two-stage object detectors in autonomous vehicles using camera data.}" Remote Sensing, vol. 13, no 1, p. 89, DOI:10.3390/rs13010089, Nov 2020.}}
     
-    \resumeSubItem{\href{https://doi.org/10.1007/978-3-030-57802-2_14}{Pedro Lara-Benítez, Manuel Carranza-García, Francisco Martínez-Álvarez, and José C. Riquelme. "\textbf{On the performance of deep learning models for time series classification in streaming.}" 15th International Conference on Soft Computing Models in Industrial and Environmental Applications (SOCO 2020), vol. 1268, pp 144-154, Springer International Publishing, DOI:10.1007/978-3-030-57802-2\_14, Aug 2020.}}
+    \resumeSubItem{\href{https://doi.org/10.1007/978-3-030-57802-2_14}{Lara-Benítez, P., Carranza-García, M., Martínez-Álvarez, F, and Riquelme, J. C. "\textbf{On the performance of deep learning models for time series classification in streaming.}" 15th International Conference on Soft Computing Models in Industrial and Environmental Applications (SOCO 2020), vol. 1268, pp 144-154, Springer International Publishing, DOI:10.1007/978-3-030-57802-2\_14, Aug 2020.}}
     
-    \resumeSubItem{\href{https://doi.org/10.3390/app10072322}{Pedro Lara-Benítez, Manuel Carranza-García, José M. Luna-Romera, José C. Riquelme. "\textbf{Temporal Convolutional Networks Applied to Energy-Related Time Series Forecasting." Applied Sciences.} , vol. 10, pp 2322, DOI:10.3390/app10072322, March 2020.}}
+    \resumeSubItem{\href{https://doi.org/10.3390/app10072322}{Lara-Benítez, P., Carranza-García, M., Luna-Romera, J. M., Riquelme, J. C. "\textbf{Temporal Convolutional Networks Applied to Energy-Related Time Series Forecasting." Applied Sciences.} , vol. 10, pp 2322, DOI:10.3390/app10072322, March 2020.}}
     
-    \resumeSubItem{\href{https://www.researchgate.net/publication/338590631_Asynchronous_dual-pipeline_deep_learning_framework_for_online_data_stream_classification}{Pedro Lara-Benítez, Manuel Carranza-García, Jorge García-Gutiérrez, and José C. Riquelme. "\textbf{Asynchronous dual-pipeline deep learning framework for online data stream classification.}" Integrated Computer-Aided Engineering, vol. 27, no. 2, pp. 101-119, DOI:10.3233/ICA-200617, Feb 2020.}}
+    \resumeSubItem{\href{https://www.researchgate.net/publication/338590631_Asynchronous_dual-pipeline_deep_learning_framework_for_online_data_stream_classification}{Lara-Benítez, P., Carranza-García, M., García-Gutiérrez, J., and Riquelme, J. C. "\textbf{Asynchronous dual-pipeline deep learning framework for online data stream classification.}" Integrated Computer-Aided Engineering, vol. 27, no. 2, pp. 101-119, DOI:10.3233/ICA-200617, Feb 2020.}}
 
     
   \resumeSubHeadingListEnd
@@ -282,7 +283,9 @@ Research-focused professional with strong programming and mathematical skills in
   \resumeSubHeadingListEnd
 % ---
 
+\vspace{-0.5em}
 \hfill \textsl{ Not clickable anymore.}
+\vspace{-1.5em}
 
 %Awards
 \section{Awards}
@@ -291,7 +294,7 @@ Research-focused professional with strong programming and mathematical skills in
       {Ministry of Science, Innovation and Universities; Government of Spain.}{}
       \vspace{-0.5em}
       
-      \resumeSubheading{Winner of OpenWebnars' Prize and 2nd Prize in Start-up Hackathon "Hack for good".}{2017}
+      \resumeSubheading{Winner of OpenWebnars' Prize and \nth{2} Prize in Start-up Hackathon "Hack for good".}{2017}
       {Think Big, Fundación Telefónica}{}
       \vspace{-0.5em}
 
@@ -299,7 +302,7 @@ Research-focused professional with strong programming and mathematical skills in
       {GO APP! by Google}{}
       \vspace{-0.5em}
 
-      \resumeSubheading{1st Prize in Code Competition "Everis Codefest Sevilla".}{2016}
+      \resumeSubheading{\nth{1} Prize in Code Competition "Everis Codefest Sevilla".}{2016}
       {Everis}{}
   
   \resumeSubHeadingListEnd
@@ -308,14 +311,11 @@ Research-focused professional with strong programming and mathematical skills in
 \section{Languages}
   \resumeSubHeadingListStart
   
-  \resumeSubItem{\textbf{Spanish:} Native.}
-  
-  \resumeSubItem{\textbf{English:} Advance (C1).}
-  
-  \resumeSubItem{\textbf{Italian:} Basic (B1).}
+  \resumeSubItem{\textbf{English} (Advance C1), \textbf{Italian} (Basic B1), \textbf{Spanish} (Native)  }
   
   \resumeSubHeadingListEnd
 
 
 % ---
 \end{document}
+
