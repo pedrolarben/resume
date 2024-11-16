@@ -1,6 +1,11 @@
 # Archieve
 Archieve/
 
+source.pdf
+.DS_Store
+source.fdb_latexmk
+source.synctex.gz
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
