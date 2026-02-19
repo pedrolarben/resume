@@ -100,78 +100,81 @@
 % COLOR THEMES SELECTION
 
 %For Light theme un-comment this and comment the Dark theme section below
-% \colorlet{urlcolor}{blue}
-% \newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv_dark.pdf}{Get dark theme}}
-% \newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv.pdf}{Get latest version \faicon{refresh}}}
-% \newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-light.png}~}
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv_dark.pdf}{Get dark theme}}
+\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv.pdf}{Get latest version \faicon{refresh}}}
+\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-light.png}~}
 
-% \begin{document}
+\begin{document}
 % ---
 
 % For Dark theme un-comment this and comment the Light theme section above
-\colorlet{textcolor}{white!80!gray}
-\colorlet{backgroundcolor}{black!30!gray}
-\colorlet{urlcolor}{blue!25!white}
-\AtBeginDocument{\color{textcolor}}
-\newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv.pdf}{Get light theme}}
-\newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv_dark.pdf}{Get latest version 
-\faicon{refresh}}}
-\newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-dark.png}~}
+% \colorlet{textcolor}{white!80!gray}
+% \colorlet{backgroundcolor}{black!30!gray}
+% \colorlet{urlcolor}{blue!25!white}
+% \AtBeginDocument{\color{textcolor}}
+% \newcommand{\otherThemeRef}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv.pdf}{Get light theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/pedrolarben/resume/raw/master/pedro_lara_cv_dark.pdf}{Get latest version 
+% \faicon{refresh}}}
+% \newcommand*{\researchgatesocialsymbol}  {\includegraphics[width=1em]{img/RG-dark.png}~}
 
- \begin{document}
- \pagecolor{backgroundcolor}
+%  \begin{document}
+%  \pagecolor{backgroundcolor}
 % ---
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://www.pedrolarben.com}{\LARGE Pedro Lara-Benítez}} &  \\
-  {{\Large Machine Learning Researcher}} &  \href{https://github.com/pedrolarben}{ \faicon{github} \color{urlcolor} pedrolarben} \\
-  \href{mailto:pedrolarabenitez@gmail.com}{pedrolarabenitez@gmail.com} &  \href{https://www.linkedin.com/in/pedrolarben }{ \faicon{linkedin} \color{urlcolor} }  \href{https://scholar.google.com/citations?user=vrWKUgcAAAAJ&hl }{ \faicon{graduation-cap} \color{urlcolor} } 
+  {{\Large Quantitative Developer (Market Risk) }} &  \href{https://github.com/pedrolarben}{ \faicon{github}}  \href{https://www.linkedin.com/in/pedrolarben }{ \faicon{linkedin} \color{urlcolor} }  \href{https://scholar.google.com/citations?user=vrWKUgcAAAAJ&hl }{ \faicon{graduation-cap} \color{urlcolor} } 
   \href{https://www.researchgate.net/profile/Pedro_Lara-Benitez }{ \researchgatesocialsymbol \color{urlcolor} } \\
-  \href{tel:+447895284760}{07895 284760} \hspace{0.5em} London, UK &  \faicon{code} Python, Java, C, R\\
-  \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
+  ML PhD &  \faicon{code} Python · SQL · JavaScript  \\
+  \href{mailto:pedrolarabenitez@gmail.com}{pedrolarabenitez@gmail.com} &  \\
+  \href{tel:+447895284760}{07895 284760} \hspace{0.5em} London, UK  & \textsl{\small \latestVersion} % \textsl{\small \otherThemeRef}
 \end{tabular*}
 % ---
 \vspace{-2em}
 \section*{}
 \justifying
 % Research-focused professional with strong programming and mathematical skills in algebra and statistics. Hands-on experience providing valuable insights via data analytics and advanced data-driven methods. Proven success developing high quality code with detailed documentation to support reproducible research. Passionate about core machine learning principles, data sciences, deep learning, engineering, and research. Track record of conducting cutting-edge research on distributed artificial intelligence to develop state-of-the-art solutions for real-world problems.
-Research-focused quantitative professional combining deep technical expertise in machine learning with practical financial industry experience. Track record of developing innovative solutions in distributed computing, risk analytics, and artificial intelligence, with multiple peer-reviewed publications in leading journals.
-
+Quantitative developer with strong production engineering experience in market risk and desk-adjacent analytics. Built distributed compute and orchestration frameworks to run large-scale model analysis (full reval VaR, P\&L vectors, stress testing) reliably within daily cycles. Proven delivery of automation-heavy regulatory platforms with end-to-end ownership across APIs, UIs, data pipelines, and compute. ML PhD with strong applied modelling foundations.
 % EXPERIENCE
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading{Bank of America}{London, UK}
       {Vice President (VP) - Quantitative Financial Analyst}{February 2024 - Present} 
       \resumeItemListStart  
-        \resumeItem{Architected and implemented a distributed computing framework for model analysis, enabling efficient model calculations, including full-revaluation and risk-theoretical P\&L, under the FRTB regulatory framework.} 
-        \resumeItem{Developed interactive dashboards for framework monitoring and control, improving user experience and operational visibility.} 
-        \resumeItem{Built an automated big-data analytics pipeline for VaR accuracy and P\&L attribution analysis, delivering actionable risk insights.} 
+        \resumeItem{Core developer of a distributed compute service for model development and risk analytics (VaR, P\&L vectors, stress testing) under FRTB regulatory workflows; enabled daily full revaluation runs for large legal entities where prior runtimes exceeded the daily cycle.}
+        \resumeItem{Designed and implemented scheduling/orchestration components (dependency management, smart retries, failure handling, run statistics) to increase reliability for failure-prone calculations impacted by upstream data, memory constraints, and pricing instability.}
+        \resumeItem{Built performance-driven task grouping/partitioning based on time and memory profiles to maximize throughput and grid utilisation across heterogeneous calculation types.}
+        \resumeItem{Delivered monitoring and user tooling (APIs + web UIs) for run control, lineage and failure triage, reducing time-to-diagnosis and improving operational visibility for model analysis users.}
+        \resumeItem{Developed an experimental shock/pricing framework for risk factors (scalars, curves, surfaces), including an API for building and applying historical moves and scenario shocks.}
       \resumeItemListEnd
           
     \resumeSubSubheading 
       {Assistant Vice President (AVP) - Quantitative Financial Analyst}{May 2022 - January 2024} 
       \resumeItemListStart 
-        \resumeItem{Led development of Risk Not in Stress (RNiS) application, transforming manual spreadsheet processes into an automated web-based solution.} 
+        \resumeItem{Led development and delivery of Risk Not in Stress (RNiS) application to support regulatory reporting; implemented models from documentation and integrated required data sources.}
+        \resumeItem{Delivered a production process generating \textasciitilde164 reports per quarter with in-application workflow controls and sign-offs.}
         \resumeItem{Contributed to critical risk processes including VaR Backtesting and Overage Explains, improving operational efficiency.} 
         \resumeItem{Collaborated with cross-functional teams to align project goals and ensure seamless execution and handoffs.} 
       \resumeItemListEnd
           
     \resumeSubSubheading {Contractor - Quantitative Developer}{May 2021 - May 2022} 
       \resumeItemListStart 
-        \resumeItem{Enhanced Risk Not in VaR (RNiV) Calculator using React/Python, implementing robust testing and code review practices in an agile environment.} 
+        \resumeItem{Contributed to the Risk Not in VaR (RNiV) platform, implementing models, automation and production support for recurring regulatory submissions.}
+        \resumeItem{Improved automation and reduced manual inputs (2025: 6{,}487 inputs processed; 82\% automated) and supported \textasciitilde2{,}181 reports/year.}
       \resumeItemListEnd
 
-    \resumeTech{Team}{Process Engineering, Global Risk Analytics - Financial data analysis and software development}
+    \resumeTech{Team}{Global Risk Quantitative Engineering, Global Risk Analytics}
 
     \resumeSubheading{University of Seville}{Seville, Spain}
       {Machine Learning Researcher}{October 2018 - May 2021}
       \resumeItemListStart
-        \resumeItem{Carry out experiments regarding deep learning, interpret results, and produce a written paper with conclusions of study.}
-        \resumeItem{Demonstrate expertise in the state-of-art techniques of the field.}
+        \resumeItem{Designed and ran deep learning experiments; analysed results and authored peer-reviewed publications.}
+        \resumeItem{Specialised in streaming time-series forecasting and online learning; contributed to top-tier journals/conferences.}
         \resumeItem{Reviewed and published research papers in top-tier peer-reviewed journals and international conferences.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{python, tensorflow, keras, pytorch, numpy, sci-kit, matplotlib, latex, AWS.}\\
+      \resumeTech{Technologies}{python, tensorflow, keras, pytorch, numpy, scikit-learn, matplotlib, latex, AWS.}\\
       \resumeTech{Theory}{Deep Learning, Time series forecasting, Online learning, Data stream, and Computer vision.}
 
     \resumeSubheading{\textit{Additional Experience}}{Seville, Spain}
@@ -352,7 +355,7 @@ Research-focused quantitative professional combining deep technical expertise in
 \section{Languages}
   \resumeSubHeadingListStart
   
-  \resumeSubItem{\textbf{Spanish} (Native), \textbf{English} (C1 Advanced), \textbf{Italian} (B1 Basic) }
+  \resumeSubItem{\textbf{Spanish} (Native), \textbf{English} (C1 Advanced), \textbf{Italian} (B2 Conversational) }
   
   \resumeSubHeadingListEnd
 
